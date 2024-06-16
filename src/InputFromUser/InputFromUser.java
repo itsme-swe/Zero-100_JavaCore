@@ -5,17 +5,18 @@ import java.util.Scanner;
 public class InputFromUser {
     public static void main(String[] args) {
 
-        Scanner s = new Scanner(System.in);
+        try(Scanner s = new Scanner(System.in)) {
+            int a, b, c;
 
-        int a, b, c;
+            System.out.println("Enter two numbers: ");
 
-        System.out.println("Enter two numbers: ");
+            a = s.nextInt();
+            b = s.nextInt();
+            c = a + b;
 
-        a = s.nextInt();
-        b = s.nextInt();
-        c = a + b;
+            System.out.printf("The sum of %d and %d is " + c, a, b);
+        }
 
-        System.out.printf("The sum of %d and %d is " + c, a, b);
     }
 }
 
