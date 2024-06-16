@@ -9,3 +9,5 @@ public class StartsEndWith_Method {
         System.out.println(email.endsWith("@"));            //🔸false
     }
 }
+
+
