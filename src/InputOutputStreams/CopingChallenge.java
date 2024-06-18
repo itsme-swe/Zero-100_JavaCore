@@ -1,3 +1,6 @@
+/*
+◽ In this challenge, we need to create a new file and then copy the content into another file.
+ */
 package InputOutputStreams;
 
 import java.io.FileInputStream;
