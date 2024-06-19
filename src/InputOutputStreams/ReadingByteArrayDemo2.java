@@ -12,6 +12,10 @@ public class ReadingByteArrayDemo2 {
         String str = new String(bis.readAllBytes());
 
         System.out.print(str);
+
+        System.out.println();
+
+        System.out.println(bis.markSupported());    // true
     }
 }
 
