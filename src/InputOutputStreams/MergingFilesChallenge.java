@@ -6,7 +6,7 @@ package InputOutputStreams;
 
 import java.io.*;
 
-public class MergingFiles {
+public class MergingFilesChallenge {
     public static void main(String[] args)  {
         try {
             FileInputStream fis1 = new FileInputStream("E:/Docs/Source.txt");

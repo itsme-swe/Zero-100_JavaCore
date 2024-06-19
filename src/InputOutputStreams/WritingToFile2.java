@@ -2,7 +2,7 @@ package InputOutputStreams;
 
 import java.io.FileOutputStream;
 
-public class CreatingFileMethod2 {
+public class WritingToFile2 {
     public static void main(String[] args) throws Exception {
 
         try ( FileOutputStream fos = new FileOutputStream("E:/JavaDocs/Text2.txt");) {
