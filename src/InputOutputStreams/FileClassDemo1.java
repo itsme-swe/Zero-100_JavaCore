@@ -2,7 +2,7 @@ package InputOutputStreams;
 
 import java.io.File;
 
-public class FileClassDemo {
+public class FileClassDemo1 {
     public static void main(String[] args) {
 
         //🔸Creating object of File class
