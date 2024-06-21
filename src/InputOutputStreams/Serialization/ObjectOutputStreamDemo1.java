@@ -19,6 +19,9 @@ public class ObjectOutputStreamDemo1 {
 
             oos.writeObject(s3);
 
+            oos.close();
+            fos.close();
+
         }catch (Exception e)
         {
             System.out.println(e);
