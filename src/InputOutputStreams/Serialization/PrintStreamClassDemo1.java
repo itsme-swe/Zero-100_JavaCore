@@ -6,12 +6,16 @@ package InputOutputStreams.Serialization;
 
 import java.io.FileOutputStream;
 import java.io.PrintStream;
+import java.io.Serializable;
 
-class Student
+class Student implements Serializable
 {
     int rollNo;
     String name;
     String dept;
+
+    Student()
+    {}
 }
 public class PrintStreamClassDemo1 {
     public static void main(String[] args) throws Exception {
