@@ -6,10 +6,10 @@ package Generics;
 @SuppressWarnings("unchecked")
 class MyArray<T>
 {
-    T[] A = (T[]) new Object[10];
+    T[] A = (T[]) new Object[10];       //1️⃣ We cannot create a generic array directly, so we need to type cast it.
     int length = 0;
 
-    //1️⃣ This method will add the values inside the array
+    //2️⃣ This method will add the values inside the array
     public void append(T value)
     {
         A[length++] = value;
@@ -27,7 +27,7 @@ class MyArray<T>
 public class GenericArrayDemo2 {
     public static void main(String[] args) {
 
-        MyArray <Integer> ma = new MyArray<>();     //2️⃣ Right now this array is working for an Integer type if we need to use for a different type than we need to change the type
+        MyArray <Integer> ma = new MyArray<>();     //3️⃣ Right now this array is working for an Integer type if we need to use for a different type than we need to change the type
 
         ma.append(10);
         ma.append(20);
